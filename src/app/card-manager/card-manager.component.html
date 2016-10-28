@@ -1,0 +1,8 @@
+<div class="bottom-margin col-lg-9 col-md-8 col-sm-8 col-xs-12 flex-parent card-body-top-pos">
+  <div *ngFor="let pageCard of pageCardArray">
+    <page-card [pageCard]="pageCard"></page-card>
+  </div>
+</div>
+<div class="bottom-margin col-lg-3 col-md-4 col-sm-4 hidden-xs side-bar">
+  <app-news-bar></app-news-bar>
+</div>

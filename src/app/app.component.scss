@@ -1,0 +1,14 @@
+$navHeight: 10em;
+
+.headerbar {
+  padding-top: 2em;
+  height: $navHeight;
+  background-color: #626262;
+}
+
+.header-title {
+  margin-left: 3em;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.84);
+}

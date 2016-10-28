@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap.css";
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+body {
+  background-color: #c3c3c3;
+}
+
+.bottom-margin {
+  margin-bottom: 1em;
+}
+
+.flex-parent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
