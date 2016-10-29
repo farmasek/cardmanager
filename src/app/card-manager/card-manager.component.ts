@@ -10,6 +10,7 @@ import {CardApiService} from "../card-api.service";
 export class CardManagerComponent implements OnInit {
 
   pageCardArray: Array<PageCard>;
+  showMenu = false;
 
   constructor(private _cardApi: CardApiService) {
   }
@@ -22,5 +23,11 @@ export class CardManagerComponent implements OnInit {
       );
 
   }
+
+  menuButtonClick() {
+    this.showMenu = !this.showMenu;
+    console.log(this.showMenu)
+  }
+
 
 }

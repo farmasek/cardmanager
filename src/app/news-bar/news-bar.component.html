@@ -1,6 +1,11 @@
 <div class="side-bar">
-  <div class="headerbar">
-    lul
+  <div class="news-header">
+    News
   </div>
-  kek
+  <div class="side-bar-body">
+  <div *ngFor="let item of newsArray">
+    <news-field [newsField]="item"></news-field>
+
+  </div>
+  </div>
 </div>

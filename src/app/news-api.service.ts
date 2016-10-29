@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Http} from "@angular/http";
 import {Observable} from "rxjs";
-import {baseURL} from "./network";
+import baseURL from "./network";
 
 @Injectable()
 export class NewsApiService {
@@ -9,6 +9,7 @@ export class NewsApiService {
 
   constructor(private http: Http) {
     this.baseUrl = baseURL;
+
   }
 
   fetchNews(): Observable<any> {

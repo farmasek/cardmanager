@@ -1,7 +1,10 @@
 $navHeight: 10em;
 
 .headerbar {
+  display: flex;
+  justify-content: space-between;
   padding-top: 2em;
+  padding-right: 1em;
   height: $navHeight;
   background-color: #626262;
 }
@@ -12,3 +15,14 @@ $navHeight: 10em;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.84);
 }
+
+@media screen and (max-width: 767px) {
+  .header-title {
+    margin-left: 2em;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.84);
+  }
+
+}
+

@@ -1,4 +1,10 @@
-<div class="side-bar">
- news field kek
+<div class="news-field-container">
 
+  <div class="bottom-line"><b>{{newsField.label}}</b><span>{{newsField.created | date: 'dd.MM '}}</span>
+  </div>
+  <p>
+    {{newsField.text}}
+  </p>
+  <div class="divider"></div>
+  <div class="bottom-line"><span>#{{newsField.tag}}</span><span>More</span></div>
 </div>

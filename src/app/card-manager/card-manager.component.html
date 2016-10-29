@@ -1,8 +1,20 @@
+<nav class="headerbar bottom-margin">
+
+<span class="header-title">
+     <md-icon>home</md-icon>
+  AppSwitch
+</span>
+  <button md-icon-button (click)="menuButtonClick()" class="hidden-lg hidden-md hidden-sm">
+    <md-icon class="md-24">fiber_new</md-icon>
+  </button>
+</nav>
+
 <div class="bottom-margin col-lg-9 col-md-8 col-sm-8 col-xs-12 flex-parent card-body-top-pos">
   <div *ngFor="let pageCard of pageCardArray">
     <page-card [pageCard]="pageCard"></page-card>
   </div>
 </div>
-<div class="bottom-margin col-lg-3 col-md-4 col-sm-4 hidden-xs side-bar">
+<div [ngClass]="showMenu?'absolutione':'nonabsolutione'"
+     class="bottom-margin col-lg-3 col-md-4 col-sm-4 side-bar card-body-top-pos">
   <app-news-bar></app-news-bar>
 </div>

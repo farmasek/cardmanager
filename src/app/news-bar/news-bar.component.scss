@@ -1,5 +1,33 @@
 .side-bar {
+  position: relative;
   width: 100%;
+  background-color: #ECEFF1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);;
+
+}
+
+.news-header {
+  font-weight: 400;
+  padding: 0.4em 1em 0.4em 1em;
+  color: white;
+  font-size: 2em;
+  background-color: #607D8B;
+}
+
+.side-bar-body {
+  overflow-y: scroll;
+  max-height: 50em ;
+  position: relative;
   height: 100%;
-  background-color: #4cae4c;
+  padding: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .side-bar-body {
+    overflow-y: visible;
+    max-height: 100%;
+    position: relative;
+    height: 100%;
+    padding: 1em;
+  }
 }
