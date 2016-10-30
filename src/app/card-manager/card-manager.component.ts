@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {PageCard, cardList, mapToCard} from "../models/pageCard";
-import {CardApiService} from "../card-api.service";
+import { Component, OnInit } from '@angular/core';
+import { PageCard, cardList, mapToCard } from "../models/pageCard";
+import { CardApiService } from "../card-api.service";
 
 @Component({
   selector: 'app-card-manager',
@@ -9,18 +9,18 @@ import {CardApiService} from "../card-api.service";
 })
 export class CardManagerComponent implements OnInit {
 
-  pageCardArray: Array<PageCard>;
+  // pageCardArray: Array<PageCard>;
   showMenu = false;
 
-  constructor(private _cardApi: CardApiService) {
+  constructor() {
   }
 
   ngOnInit() {
-    this._cardApi.fetchCards()
-      .subscribe(
-        result => this.pageCardArray = result.map(mapToCard),
-        error => console.log('error fetching cards')
-      );
+    // this._cardApi.fetchCards()
+    //   .subscribe(
+    //     result => this.pageCardArray = result.map(mapToCard),
+    //     error => console.log('error fetching cards')
+    //   );
 
   }
 

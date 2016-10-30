@@ -1,0 +1,19 @@
+<md-card>
+  <div *ngIf="oneNew">
+    <md-card-title class="news-detail-infoline">
+      <div>{{oneNew.label}}</div>
+      <button md-icon-button [routerLink]="'/'">
+        <md-icon class="md-24">exit_to_app</md-icon>
+      </button>
+    </md-card-title>
+    <md-card-subtitle class="news-detail-infoline">
+      <div>#{{oneNew.tag | uppercase }}</div>
+      <span>{{oneNew.created | date: 'dd.MM '}}</span></md-card-subtitle>
+    <md-card-content>
+      {{oneNew.text}}
+    </md-card-content>
+  </div>
+  <div *ngIf="!oneNew">
+    Loading...
+  </div>
+</md-card>

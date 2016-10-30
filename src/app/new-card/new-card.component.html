@@ -1,0 +1,20 @@
+<div class="login-card">
+  <md-card class=" col-xs-12 col-sm-8 col-md-6 col-lg-4">
+    <md-card-title>Create page card</md-card-title>
+    <md-card-content>
+      <form>
+
+        <md-input placeholder="Name" name="Name" type="text" style="width: 100%" [(ngModel)]="card.name"></md-input>
+        <md-input placeholder="Color" name="Color" type="text" style="width: 100%" [(ngModel)]="card.color"></md-input>
+        <md-input placeholder="Letter" name="Letter" type="text" style="width: 100%"
+                  [(ngModel)]="card.letter"></md-input>
+        <md-input placeholder="Description" name="Description" type="text" style="width: 100%"
+                  [(ngModel)]="card.description"></md-input>
+        <md-input placeholder="Link" name="Link" type="text" style="width: 100%" [(ngModel)]="card.link"></md-input>
+      </form>
+    </md-card-content>
+    <md-card-actions style="display: flex; justify-content: center">
+      <button md-raised-button color="primary" (click)="saveCard()">Create card</button>
+    </md-card-actions>
+  </md-card>
+</div>

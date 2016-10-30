@@ -6,5 +6,5 @@
     {{newsField.text}}
   </p>
   <div class="divider"></div>
-  <div class="bottom-line"><span>#{{newsField.tag}}</span><span>More</span></div>
+  <div class="bottom-line"><span>#{{newsField.tag}}</span><a [routerLink]="['/news',newsField.id]">More</a></div>
 </div>

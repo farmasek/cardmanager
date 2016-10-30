@@ -17,8 +17,14 @@
   margin: 0.2em;
   display: flex;
   justify-content: space-between;
+  color: rgba(0, 0, 0, 0.68);
   span {
-    color: rgba(0, 0, 0, 0.68);
     text-transform: uppercase;
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.68);
+    text-decoration: none;
+
   }
 }

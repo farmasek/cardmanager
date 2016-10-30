@@ -9,7 +9,7 @@ export class NewsField {
   text: string;
   created: Date;
 
-  constructor(id: number, label: string, tag: string, text: string, created: Date) {
+  constructor(id?: number, label?: string, tag?: string, text?: string, created?: Date) {
     this.id = id;
     this.label = label;
     this.tag = tag;

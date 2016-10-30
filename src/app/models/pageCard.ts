@@ -18,6 +18,7 @@ export class PageCard {
     this.link = link;
     this.color = color;
   }
+
 }
 
 export const mapToCard = (src: any) => {
