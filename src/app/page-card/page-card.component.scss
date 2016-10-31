@@ -6,15 +6,13 @@
   width: 20em;
   height: 20em;
   overflow: hidden;
+  padding: 0;
 
 }
 
 .card:hover {
   cursor: pointer;
-  margin-bottom: 1em;
-  margin-right: 1em;
-  width: 20em;
-  height: 20em;
+
 }
 
 .page-letter {
@@ -68,7 +66,26 @@
   color: rgba(255, 255, 255, 0.84);
 }
 
+.hover-trigger {
+  z-index: 51;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  font-size: 3em;
+  top: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.52);
+  transition: color 0.25s ease-in;
+
+}
+
+.hover-trigger:hover {
+  color: white;
+  transition: color 0.25s ease-in;
+}
+
 .card-content {
+  z-index: 50;
   padding: 1em;
   display: inline-flex;
   justify-content: center;
@@ -93,7 +110,7 @@
   }
 }
 
-.card-content:hover {
+.hover-trigger:hover + .card-content {
   md-card-title {
     @extend .page-title;
     top: 0;

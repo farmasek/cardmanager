@@ -1,12 +1,17 @@
-<md-card class="card card-content"
-         (click)="click($event)"
-
+<md-card
+  class="card"
+  (click)="click($event)"
 >
-  <div class="card-content-div">
-    <md-card-title>{{pageCard.name}}</md-card-title>
-    <md-card-content>
-      <p>{{pageCard.description}}</p>
-      <span [style.background-color]=[pageCard.color]> {{pageCard.letter}}</span>
-    </md-card-content>
+  <md-icon class="hover-trigger">info_outline</md-icon>
+  <div
+    class="card-content"
+  >
+    <div class="card-content-div">
+      <md-card-title>{{pageCard.name}}</md-card-title>
+      <md-card-content>
+        <p>{{pageCard.description}}</p>
+        <span [style.background-color]=[pageCard.color]> {{pageCard.letter}}</span>
+      </md-card-content>
+    </div>
   </div>
 </md-card>
