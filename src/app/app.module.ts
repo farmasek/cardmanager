@@ -18,7 +18,8 @@ import { ManagementComponent } from './management/management.component';
 import { LoginComponent } from './login/login.component';
 import { ManagementholderComponent } from './managementholder/managementholder.component';
 import { NewCardComponent } from './new-card/new-card.component';
-import { NewNewsComponent } from './new-news/new-news.component'
+import { NewNewsComponent } from './new-news/new-news.component';
+import { AllCardsComponent } from './all-cards/all-cards.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { NewNewsComponent } from './new-news/new-news.component'
     LoginComponent,
     ManagementholderComponent,
     NewCardComponent,
-    NewNewsComponent
+    NewNewsComponent,
+    AllCardsComponent
   ],
   imports: [
     MaterialModule.forRoot(),
@@ -61,9 +63,9 @@ import { NewNewsComponent } from './new-news/new-news.component'
             path: 'management', component: ManagementholderComponent,
             children: [
               {path: 'add-card', component: NewCardComponent},
-              {path: 'add-news', component: NewNewsComponent},
-              {path: 'all-cards', component: ManagementholderComponent},
-              {path: 'all-news', component: ManagementholderComponent},
+              {path: 'add-report', component: NewNewsComponent},
+              {path: 'all-cards', component: AllCardsComponent},
+              {path: 'all-reports', component: LoginComponent},
               {path: '', component: LoginComponent}
             ]
           },

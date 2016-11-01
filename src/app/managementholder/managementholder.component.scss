@@ -1,2 +1,13 @@
-.manager-holder-menu{
+.manager-holder-menu {
+}
+
+.holder-bottom-margin {
+  margin-bottom: 8em;
+}
+
+.holder-menu-scroll {
+  overflow: hidden;
+  div {
+    overflow: auto;
+  }
 }

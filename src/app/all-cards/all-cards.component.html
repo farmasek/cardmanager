@@ -1,0 +1,36 @@
+<md-card>
+  <md-card-title>Card management</md-card-title>
+  <md-card-content>
+    <table class="table table-responsive table-bordered ">
+      <thead>
+      <tr>
+        <td>Name</td>
+        <td>Letter</td>
+        <td>Description</td>
+        <td>Link</td>
+        <td>Color</td>
+        <td>Active</td>
+        <td>Reason</td>
+      </tr>
+      </thead>
+      <tr *ngFor="let card of allCards">
+
+        <td>{{card.name}}</td>
+        <td>{{card.letter}}</td>
+        <td>{{card.description}}</td>
+        <td>{{card.link}}</td>
+        <td>{{card.color}}</td>
+
+        <td>
+          <md-checkbox [checked]="card.active"
+                       disabled="true"
+          >
+          </md-checkbox>
+        </td>
+        <td>not yet supported</td>
+
+      </tr>
+
+    </table>
+  </md-card-content>
+</md-card>

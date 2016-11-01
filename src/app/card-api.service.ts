@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-import { Http, Headers, RequestOptions } from "@angular/http";
-import { Observable } from "rxjs";
+import {Injectable} from '@angular/core';
+import {Http, Headers, RequestOptions} from "@angular/http";
+import {Observable} from "rxjs";
 import baseURL from './network';
-import { PageCard } from "./models/pageCard";
+import {PageCard, mapToCard} from "./models/pageCard";
 
 @Injectable()
 export class CardApiService {
@@ -14,7 +14,7 @@ export class CardApiService {
 
   fetchCards(): Observable<any> {
     return this.http.get(`${this.baseUrl}/all-cards`)
-      .map(response => response.json())
+      .map(response => response.json().map(mapToCard))
   }
 
 

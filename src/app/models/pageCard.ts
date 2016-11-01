@@ -9,19 +9,22 @@ export class PageCard {
   description: string;
   link: string;
   color: string;
+  active: boolean;
 
 
-  constructor(letter: string, name: string, description: string, link: string, color: string) {
+  constructor(letter: string, name: string, description: string, link: string, color: string, active = true) {
     this.letter = letter;
     this.name = name;
     this.description = description;
     this.link = link;
     this.color = color;
+    this.active = active;
   }
 
 }
 
 export const mapToCard = (src: any) => {
+  console.log(src)
   return new PageCard(src.letter, src.name, src.description, src.link, src.color)
 }
 
